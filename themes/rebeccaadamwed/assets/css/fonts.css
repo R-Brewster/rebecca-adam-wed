@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "edwardian-script";
+	src: url(/wp-content/themes/rebeccaadamwed/assets/ITCEDSCR.TTF);
+}
+
+@font-face {
+	font-family: "high-tower-text";
+	src: url(/wp-content/themes/rebeccaadamwed/assets/htowert.ttf);
+}
+
+
+h2, h3, h4, h5, h6, p, a {
+    /* @apply font-tower;  */
+	font-family: "high-tower-text", serif;
+}
+
+.medium {
+	/* @apply font-medium; */
+	font-weight: 600;
+}

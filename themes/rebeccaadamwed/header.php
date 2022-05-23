@@ -22,6 +22,8 @@
     	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 	/>
 
+	<script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+
 	<?php wp_head(); ?>
 </head>
 

@@ -1,0 +1,126 @@
+/* Desktop menu */
+.menu-menu-1-container {
+    background-color: transparent;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+}
+
+#primary-menu {
+    display: flex;
+    padding: 10px 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#primary-menu .menu-item {
+    text-align: center;
+}
+
+#primary-menu .menu-item.with-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#primary-menu .menu-item.with-logo:hover {
+    cursor: pointer;
+}
+#primary-menu .menu-item.with-logo:hover:after {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#primary-menu .menu-item.with-logo a {
+    font-size: 0;
+    height: 0;
+    width: 0;
+}
+
+#primary-menu .menu-item.with-logo:after {
+    content: "";
+    mask: url("../assets/images/wedding_logo_smaller.png");
+    -webkit-mask: url("../assets/images/wedding_logo_smaller.png");
+    width: 150px;
+    height: 83px;
+    background-color: white;
+    display: block;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    transition: all 0.35s ease-in-out;
+}
+
+#primary-menu .menu-item a {
+    color: white;
+    font-family: "tower-serif";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all 0.35s ease-in-out;
+}
+
+#primary-menu .menu-item a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#primary-menu .menu-item a:hover:after {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#primary-menu .menu-item a:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: auto;
+    bottom: 0;
+    height: 1px;
+    background-color: white;
+    transition: all 0.35s ease-in-out;
+}
+
+#primary-menu .menu-item a:hover:after {
+    width: 100%;
+    transition: all 0.35s ease-in-out;
+}
+
+.sticky #primary-menu .menu-item a {
+    color: var(--blue);
+    transition: all 0.35s ease-in-out;
+}
+
+.sticky #primary-menu .menu-item a:after {
+    color: var(--red);
+    transition: all 0.35s ease-in-out;
+}
+
+.sticky #primary-menu .menu-item a:hover {
+    color: var(--red);
+    transition: all 0.35s ease-in-out;
+}
+
+.sticky  #primary-menu .menu-item a:hover:after {
+    background-color: var(--red);
+}
+
+.sticky .menu-menu-1-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.25s ease-in-out;
+}
+
+.sticky #primary-menu .menu-item.with-logo:after {
+    background-color: var(--blue);
+}
+
+.sticky #primary-menu .menu-item.with-logo:hover:after {
+    background-color: var(--red) !important;
+}
+
+/* Mobile menu */

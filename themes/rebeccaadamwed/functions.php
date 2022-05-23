@@ -144,13 +144,13 @@ function _s_scripts() {
 	wp_enqueue_style( '_s-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( '_s-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( '_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	// wp_enqueue_script( '_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	wp_enqueue_script( 'theme-js', get_template_directory_uri() . '/js/theme.js', array('jquery'), _S_VERSION, true );
+	wp_enqueue_script( 'theme-js', get_template_directory_uri() . '/assets/js/theme.js', array('jquery'), _S_VERSION, true );
 
 }
 add_action( 'wp_enqueue_scripts', '_s_scripts' );
@@ -231,3 +231,5 @@ function color_setup() {
 }
 
 add_action( 'after_setup_theme', 'color_setup' );
+
+wp_enqueue_style( 'rebecca-adam-wed-styles', get_template_directory_uri().'/dist/output.css', array(), 1.0);
