@@ -8,13 +8,31 @@
 	src: url(/wp-content/themes/rebeccaadamwed/assets/htowert.ttf);
 }
 
-
 h2, h3, h4, h5, h6, p, a {
     /* @apply font-tower;  */
 	font-family: "high-tower-text", serif;
 }
 
+h1 {
+	font-family: "edwardian-script", serif;
+}
+
 .medium {
 	/* @apply font-medium; */
 	font-weight: 600;
+}
+
+body.page p {
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+
+body.page a {
+	font-family: "high-tower-text", sans-serif;
+	font-size: 20px;
+}
+
+body.page a:hover {
+	color: var(--red);
+	text-decoration: underline;
 }

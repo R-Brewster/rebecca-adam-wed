@@ -102,6 +102,5 @@ a.wp-block-button__link:hover {
 .is-style-outline > a.wp-block-button__link:hover {
     background-color: var(--red);
     color: white !important;
-    /* border-color: var(--red); */
     transition: all 0.35s 0.35s ease-in-out;
 }

@@ -2,6 +2,7 @@ module.exports = {
   content: ["./**/*.php"],
   theme: {
     screens: {
+      'small' : '0px',
       'medium': '641px',
       // => @media (min-width: 641px) { ... }
 

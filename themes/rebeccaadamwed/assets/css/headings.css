@@ -4,13 +4,17 @@ h2 {
     align-items: center;
 }
 
+h2.has-text-align-left {
+    align-items: flex-start;
+}
+
 body:not(.wp-admin) h2:after {
     content: "";
     mask-image: url("../assets/images/vines-03-small.png");
     -webkit-mask-image: url("../assets/images/vines-03-small.png");
     mask-size: contain;
     -webkit-mask-size: contain;
-    height:100px;
+    height: 100px;
     width: 100px;
     display:block;
     margin-top: -40px;
@@ -23,4 +27,9 @@ body:not(.wp-admin) h2.no-decoration:after {
 
 body:not(.wp-admin) h2.has-white-color:after {
     background-color: white;
+}
+
+body.page h2 {
+    font-size: 32px;
+    font-weight: 500;
 }
