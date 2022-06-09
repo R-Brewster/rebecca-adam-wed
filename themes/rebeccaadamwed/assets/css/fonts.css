@@ -36,3 +36,11 @@ body.page a:hover {
 	color: var(--red);
 	text-decoration: underline;
 }
+
+.heading-font {
+	font-family: "edwardian-script", serif;
+}
+
+body.page h2:after {
+	margin-top: -30px !important;
+}

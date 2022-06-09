@@ -48,3 +48,55 @@ body:not(.wp-admin) .contained-right {
 .wp-block-image {
     margin-bottom: 0 !important;
 }
+
+.gform_wrapper {
+    background-color: var(--blue);
+    padding: 50px;
+}
+
+.gform_wrapper form {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 50px 0;
+}
+
+.gform_wrapper form .gfield .gfield_label {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.gform_wrapper form .gfield label {
+    color: white;
+}
+
+.gform_wrapper form .gfield_description {
+    color: white;
+    font-size: 18px;
+}
+
+.gform_wrapper form .gfield .gfield_label .gfield_required {
+    display: none;
+}
+
+.gform_wrapper .gform_footer {
+    display: flex;
+    justify-content: center;
+}
+
+.gform_wrapper .button {
+    padding: 20px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+    transition: all 0.35s ease-in-out;
+}
+
+.gform_wrapper .button:hover {
+    border-color: var(--red);
+    color: var(--red);
+    transition: all 0.35s ease-in-out;
+    cursor: pointer;
+}
